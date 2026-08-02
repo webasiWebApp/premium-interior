@@ -32,7 +32,7 @@ export function About() {
                 Platinum Interiors Is A Sri Lankan Interiors And Construction Company Specialising In Premium Aluminium Windows, Doors, Glass Installations And Custom Kitchens. Founded On 28 Years Of Hands-On Construction Expertise, We Don't Just Design Spaces We Build Them, With The Technical Precision That Comes From Two Generations Of Family Craftsmanship.
               </p>
             </RevealOnScroll>
-            <RevealOnScroll delay={0.2} className="relative w-full h-[300px] sm:h-[400px] lg:h-[380px] overflow-hidden">
+            <RevealOnScroll delay={0.2} className="relative hidden md:block w-full h-[300px] sm:h-[400px] lg:h-[380px] overflow-hidden">
               <motion.div style={{ y: y1 }} className="absolute inset-0 h-[120%] -top-[10%]">
                 <Image src="/aboutImg4.png" alt="Workspace Details" fill className="object-cover" />
               </motion.div>
