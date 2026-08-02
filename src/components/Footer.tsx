@@ -9,7 +9,7 @@ export function Footer() {
           {/* Brand */}
           <div className="flex flex-col gap-6">
             <div className="bg-white inline-block p-2 rounded-sm self-start">
-              <Image src="/logo.jpg" alt="Platinum Interiors" width={140} height={48} className="h-10 w-auto" />
+              <Image src="/logo.png" alt="Platinum Interiors" width={140} height={48} className="h-10 w-auto" />
             </div>
             <p className="text-sm font-light leading-relaxed opacity-90 max-w-xs">
               Sri Lanka's trusted interiors and construction company. We design, build and install premium kitchens and interiors.
@@ -42,9 +42,8 @@ export function Footer() {
           <div>
             <h3 className="text-secondary font-semibold text-lg mb-6 border-b border-secondary/30 pb-2 inline-block">Follow Us</h3>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-secondary hover:text-primary hover:border-secondary transition-all">FB</a>
-              <a href="#" className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-secondary hover:text-primary hover:border-secondary transition-all">IG</a>
-              <a href="#" className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-secondary hover:text-primary hover:border-secondary transition-all">IN</a>
+              <a href="https://web.facebook.com/people/Platinum-Interiors/61586214477243/#" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-secondary hover:text-primary hover:border-secondary transition-all">FB</a>
+              <a href="https://www.tiktok.com/@Platinum.Interiors1" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-secondary hover:text-primary hover:border-secondary transition-all">TT</a>
             </div>
           </div>
         </div>

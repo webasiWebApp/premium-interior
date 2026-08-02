@@ -1,16 +1,15 @@
 "use client";
 
 import Image from "next/image";
+import { motion } from "framer-motion";
 import { RevealOnScroll } from "../ui/RevealOnScroll";
 import { SectionHeading } from "../ui/SectionHeading";
 
 const brands = [
-  { name: "Alumex", logo: "/logos/l1.png", desc: "Sri Lanka's #1 aluminium manufacturer. Internationally certified profiles." },
-  { name: "Lanka Aluminium", logo: "/logos/l2.JPG", desc: "Premium aluminium solutions trusted across Sri Lanka's construction industry." },
-  { name: "Lumin", logo: "/logos/l3.png", desc: "Premium certified doors & windows. Built to international manufacturing standards." },
-  { name: "Swisstek", logo: "/logos/l4.png", desc: "High-quality aluminium construction materials for the perfect finish." },
-  { name: "Premium Brand", logo: "/logos/l5.png", desc: "Durable and aesthetic solutions for modern architecture and design." },
-  { name: "Elite Windows", logo: "/logos/l6.png", desc: "Advanced engineering and precision crafting for secure living." },
+  { name: "Alumex", logo: "/logos/Alumex.png", desc: "Sri Lanka's #1 aluminium manufacturer. Internationally certified profiles." },
+  { name: "Lanka Aluminium", logo: "/logos/Lanka Aluminium.png", desc: "Premium aluminium solutions trusted across Sri Lanka's construction industry." },
+  { name: "Lumin", logo: "/logos/Lumin.png", desc: "Premium certified doors & windows. Built to international manufacturing standards." },
+  { name: "Swisstek", logo: "/logos/Swisstek.png", desc: "High-quality aluminium construction materials for the perfect finish." },
 ];
 
 export function Materials() {
@@ -24,11 +23,19 @@ export function Materials() {
           centered
         />
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
-          {brands.map((brand, i) => (
-            <RevealOnScroll key={brand.name} delay={i * 0.1}>
-              <div className="bg-[#C1E700]/5 rounded-xl p-8 flex flex-col items-center text-center h-full transition-all duration-300 hover:-translate-y-1 hover:bg-[#C1E700] hover:shadow-lg group">
-                <div className="bg-white rounded-lg p-4 mb-6 shadow-sm w-full h-24 flex items-center justify-center">
+        <RevealOnScroll delay={0.2} className="mt-16 w-full overflow-hidden relative">
+          {/* Gradient edges for smooth fade */}
+          <div className="absolute inset-y-0 left-0 w-16 md:w-32 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" />
+          <div className="absolute inset-y-0 right-0 w-16 md:w-32 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
+          
+          <motion.div 
+            className="flex gap-6 w-max py-4"
+            animate={{ x: ["0%", "-33.333333%"] }}
+            transition={{ duration: 25, ease: "linear", repeat: Infinity }}
+          >
+            {[...brands, ...brands, ...brands].map((brand, i) => (
+              <div key={i} className="bg-[#C1E700] rounded-[5px] p-8 flex flex-col items-center text-center h-full group w-[280px] md:w-[320px] shrink-0">
+                <div className="bg-white rounded-[5px] p-4 mb-6 w-full h-24 flex items-center justify-center">
                   <div className="relative w-full h-full">
                     <Image
                       src={brand.logo}
@@ -41,13 +48,13 @@ export function Materials() {
                 <h3 className="text-[18px] md:text-[20px] font-medium text-primary mb-3">
                   {brand.name}
                 </h3>
-                <p className="text-[14px] text-black font-regular leading-relaxed group-hover:text-primary/80 transition-colors">
+                <p className="text-[14px] text-black/90 font-regular leading-relaxed">
                   {brand.desc}
                 </p>
               </div>
-            </RevealOnScroll>
-          ))}
-        </div>
+            ))}
+          </motion.div>
+        </RevealOnScroll>
 
         <RevealOnScroll delay={0.4}>
           <p className="text-[13px] text-gray-500 text-center mt-12 max-w-2xl mx-auto">

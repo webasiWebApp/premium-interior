@@ -7,7 +7,7 @@ export function FinalCTA() {
   return (
     <section id="contact" className="relative py-24 bg-primary overflow-hidden">
       {/* Subtle background element */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-[400px] bg-secondary/5 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-[400px] bg-secondary/5 rounded-[5px] blur-[100px] pointer-events-none" />
       
       <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-[1200px] relative z-10 text-center">
         <motion.div

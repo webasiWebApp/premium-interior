@@ -83,7 +83,7 @@ export function HeroCarousel() {
       </AnimatePresence>
 
       {/* Right Middle Slide Navigation */}
-      <div className="absolute right-4 md:right-8 lg:right-12 top-1/2 -translate-y-1/2 z-40 flex flex-col items-center gap-6 bg-black/30 backdrop-blur-md px-3 py-5 rounded-full border border-white/10 shadow-2xl">
+      <div className="absolute right-4 md:right-8 lg:right-12 top-1/2 -translate-y-1/2 z-40 flex flex-col items-center gap-6 bg-black/30 backdrop-blur-md px-3 py-5 rounded-[5px] border border-white/10 ">
         <span className="text-secondary font-bold text-xs md:text-sm tracking-wider">
           0{currentIndex + 1}
         </span>
@@ -98,9 +98,9 @@ export function HeroCarousel() {
             >
               <span
                 className={cn(
-                  "rounded-full transition-all duration-500",
+                  "rounded-[5px] transition-all duration-500",
                   currentIndex === idx 
-                    ? "w-2.5 h-7 bg-secondary shadow-[0_0_12px_rgba(193,231,0,0.8)]" 
+                    ? "w-2.5 h-7 bg-secondary " 
                     : "w-2 h-2 bg-white/40 group-hover:bg-white/80"
                 )}
               />

@@ -23,8 +23,8 @@ export function KitchenPackages() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-16">
           {/* Local Package */}
           <RevealOnScroll delay={0.1}>
-            <div className="bg-white rounded-2xl p-8 lg:p-10 shadow-sm border border-gray-100 flex flex-col h-full relative overflow-hidden transition-all duration-300 hover:shadow-md">
-              <div className="inline-block bg-primary text-white text-[12px] font-medium uppercase tracking-wider px-3 py-1 rounded-full w-fit mb-6">
+            <div className="bg-white rounded-[5px] p-8 lg:p-10  border border-gray-100 flex flex-col h-full relative overflow-hidden transition-all duration-300 ">
+              <div className="inline-block bg-primary text-white text-[12px] font-medium uppercase tracking-wider px-3 py-1 rounded-[5px] w-fit mb-6">
                 Local Clients · Sri Lanka
               </div>
               
@@ -35,7 +35,7 @@ export function KitchenPackages() {
                 Designed, Built & Guaranteed — In Just 14 Days
               </p>
               
-              <div className="inline-block bg-gray-100 text-gray-700 text-[12px] font-medium px-3 py-1 rounded-sm w-fit mb-8">
+              <div className="inline-block bg-gray-100 text-gray-700 text-[12px] font-medium px-3 py-1 rounded-[5px] w-fit mb-8">
                 Free Home Visit · Custom Quote
               </div>
 
@@ -73,7 +73,7 @@ export function KitchenPackages() {
                 </div>
               </div>
 
-              <div className="bg-primary/5 rounded-xl p-5 mb-8 flex gap-4 items-start">
+              <div className="bg-primary/5 rounded-[5px] p-5 mb-8 flex gap-4 items-start">
                 <ShieldCheck size={24} className="text-primary flex-shrink-0 mt-1" />
                 <div>
                   <h5 className="text-[16px] font-medium text-primary mb-1">The Platinum Promise</h5>
@@ -106,8 +106,8 @@ export function KitchenPackages() {
 
           {/* Overseas Package */}
           <RevealOnScroll delay={0.2}>
-            <div className="bg-white rounded-2xl p-8 lg:p-10 shadow-sm border border-gray-100 flex flex-col h-full relative overflow-hidden transition-all duration-300 hover:shadow-md">
-              <div className="inline-block bg-secondary text-primary text-[12px] font-medium uppercase tracking-wider px-3 py-1 rounded-full w-fit mb-6">
+            <div className="bg-white rounded-[5px] p-8 lg:p-10  border border-gray-100 flex flex-col h-full relative overflow-hidden transition-all duration-300 ">
+              <div className="inline-block bg-secondary text-primary text-[12px] font-medium uppercase tracking-wider px-3 py-1 rounded-[5px] w-fit mb-6">
                 Overseas Clients · International
               </div>
               
@@ -118,7 +118,7 @@ export function KitchenPackages() {
                 Your Dream Kitchen Back Home — We Handle Everything While You're Away
               </p>
               
-              <div className="inline-block bg-gray-100 text-gray-700 text-[12px] font-medium px-3 py-1 rounded-sm w-fit mb-8">
+              <div className="inline-block bg-gray-100 text-gray-700 text-[12px] font-medium px-3 py-1 rounded-[5px] w-fit mb-8">
                 Pricing in USD · GBP · AED
               </div>
 
@@ -157,7 +157,7 @@ export function KitchenPackages() {
                 </div>
               </div>
 
-              <div className="bg-[#C1E700]/10 rounded-xl p-5 mb-8 flex gap-4 items-start">
+              <div className="bg-[#C1E700]/10 rounded-[5px] p-5 mb-8 flex gap-4 items-start">
                 <Smartphone size={24} className="text-primary flex-shrink-0 mt-1" />
                 <div>
                   <h5 className="text-[16px] font-medium text-primary mb-1">You Watch It Being Built</h5>

@@ -11,7 +11,7 @@ export function PortfolioGrid() {
     <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 md:gap-6 space-y-4 md:space-y-6">
       {PORTFOLIO_IMAGES.map((src, idx) => (
         <RevealOnScroll key={src} delay={Math.min((idx % 4) * 0.1, 0.4)} className="break-inside-avoid">
-          <div className="relative w-full rounded-md overflow-hidden group">
+          <div className="relative w-full rounded-[5px] overflow-hidden group">
             <Image 
               src={src} 
               alt={`Project ${idx + 1}`} 

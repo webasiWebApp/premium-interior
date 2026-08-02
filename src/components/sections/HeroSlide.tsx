@@ -91,7 +91,7 @@ export function HeroSlide({ slide, isActive }: HeroSlideProps) {
               transition={{ duration: 0.6, delay: 0.9 }}
               className="flex flex-wrap gap-4"
             >
-              <Button variant="primary" onClick={(e) => { e.preventDefault(); scrollTo('#contact'); }}>
+              <Button variant="primary" onClick={(e) => { e.preventDefault(); window.location.href = 'mailto:hello@platinuminteriors.lk'; }}>
                 Book Free Home Visit
               </Button>
               <Button variant="secondary" onClick={(e) => { e.preventDefault(); scrollTo('#portfolio'); }}>

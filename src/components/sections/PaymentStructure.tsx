@@ -29,7 +29,7 @@ export function PaymentStructure() {
             {stages.map((item, i) => (
               <RevealOnScroll key={item.stage} delay={i * 0.15}>
                 <div className="flex flex-col items-center text-center lg:items-start lg:text-left group">
-                  <div className="w-[88px] h-[88px] bg-primary rounded-full flex items-center justify-center mb-6 shadow-lg border-4 border-white transition-transform duration-300 group-hover:scale-110">
+                  <div className="w-[88px] h-[88px] bg-primary rounded-[5px] flex items-center justify-center mb-6  border-4 border-white transition-transform duration-300 group-hover:scale-110">
                     <item.icon size={36} className="text-secondary" />
                   </div>
                   
@@ -55,7 +55,7 @@ export function PaymentStructure() {
         </div>
 
         <RevealOnScroll delay={0.4}>
-          <div className="mt-20 bg-[#C1E700]/20 rounded-xl p-6 md:p-8 text-center max-w-3xl mx-auto border border-[#C1E700]/30">
+          <div className="mt-20 bg-[#C1E700]/20 rounded-[5px] p-6 md:p-8 text-center max-w-3xl mx-auto border border-[#C1E700]/30">
             <p className="text-[15px] md:text-[16px] text-primary font-medium leading-relaxed">
               Your protection matters to us. The final payment is only requested after you have personally inspected the completed work and confirmed your satisfaction. We do not request full payment upfront — ever.
             </p>

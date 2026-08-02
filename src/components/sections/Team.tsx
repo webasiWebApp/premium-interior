@@ -38,8 +38,8 @@ export function Team() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 mt-16">
           {team.map((member, i) => (
             <RevealOnScroll key={member.name} delay={i * 0.2}>
-              <div className="flex flex-col md:flex-row gap-8 bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-gray-100 h-full transition-all duration-300 hover:shadow-md">
-                <div className="w-full md:w-2/5 aspect-[4/5] relative rounded-xl overflow-hidden flex-shrink-0 bg-gray-100">
+              <div className="flex flex-col md:flex-row gap-8 bg-white p-6 md:p-8 rounded-[5px]  border border-gray-100 h-full transition-all duration-300 ">
+                <div className="w-full md:w-2/5 aspect-[4/5] relative rounded-[5px] overflow-hidden flex-shrink-0 bg-gray-100">
                   <Image
                     src={member.photo}
                     alt={member.name}
@@ -49,7 +49,7 @@ export function Team() {
                 </div>
                 
                 <div className="flex flex-col justify-center flex-grow py-2">
-                  <div className="text-[12px] font-medium uppercase tracking-widest text-secondary bg-secondary/10 w-fit px-3 py-1 rounded-sm mb-4">
+                  <div className="text-[12px] font-medium uppercase tracking-widest text-secondary bg-secondary/10 w-fit px-3 py-1 rounded-[5px] mb-4">
                     {member.role}
                   </div>
                   
@@ -68,7 +68,7 @@ export function Team() {
                   {member.chips && (
                     <div className="flex flex-wrap gap-2 mt-auto">
                       {member.chips.map(chip => (
-                        <span key={chip} className="text-[12px] font-medium text-primary bg-[#C1E700]/20 px-3 py-1.5 rounded-full">
+                        <span key={chip} className="text-[12px] font-medium text-primary bg-[#C1E700]/20 px-3 py-1.5 rounded-[5px]">
                           {chip}
                         </span>
                       ))}

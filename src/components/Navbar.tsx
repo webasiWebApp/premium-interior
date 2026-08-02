@@ -51,11 +51,11 @@ export function Navbar() {
         <div className="flex items-center">
           <a href="#" onClick={(e) => { e.preventDefault(); scrollTo(0); }}>
             <Image
-              src={isScrolled || isMobileMenuOpen ? "/logo.jpg" : "/logoW.jpg"}
+              src={isScrolled || isMobileMenuOpen ? "/logo.png" : "/logoW.png"}
               alt="Platinum Interiors"
-              width={120}
-              height={40}
-              className="h-10 w-auto object-contain"
+              width={200}
+              height={64}
+              className="h-14 md:h-16 w-auto object-contain transition-all duration-300"
               priority
             />
           </a>
@@ -79,7 +79,7 @@ export function Navbar() {
         </nav>
 
         <div className="hidden lg:block">
-          <Button variant="primary" onClick={(e) => { e.preventDefault(); scrollTo('#contact'); }}>
+          <Button variant="primary" onClick={(e) => { e.preventDefault(); window.location.href = 'mailto:hello@platinuminteriors.lk'; }}>
             Book Free Home Visit
           </Button>
         </div>
@@ -114,7 +114,7 @@ export function Navbar() {
                 </a>
               ))}
               <div className="mt-4">
-                <Button variant="primary" className="w-full justify-center" onClick={(e) => { e.preventDefault(); scrollTo('#contact'); setIsMobileMenuOpen(false); }}>
+                <Button variant="primary" className="w-full justify-center" onClick={(e) => { e.preventDefault(); window.location.href = 'mailto:hello@platinuminteriors.lk'; setIsMobileMenuOpen(false); }}>
                   Book Free Home Visit
                 </Button>
               </div>
