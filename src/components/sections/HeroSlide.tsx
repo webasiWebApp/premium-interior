@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { Button } from "../ui/Button";
 import { StatItem } from "../ui/StatItem";
 import { cn } from "@/lib/utils";
+import { useSmoothScroll } from "@/lib/smoothScroll";
 
 export interface SlideData {
   bg: string;
@@ -26,6 +27,8 @@ const STATS = [
 ];
 
 export function HeroSlide({ slide, isActive }: HeroSlideProps) {
+  const { scrollTo } = useSmoothScroll();
+
   return (
     <div className={cn(
       "absolute inset-0 w-full h-full transition-opacity duration-1000",
@@ -88,8 +91,12 @@ export function HeroSlide({ slide, isActive }: HeroSlideProps) {
               transition={{ duration: 0.6, delay: 0.9 }}
               className="flex flex-wrap gap-4"
             >
-              <Button variant="primary">Book Free Home Visit</Button>
-              <Button variant="secondary" href="#portfolio">Our Works</Button>
+              <Button variant="primary" onClick={(e) => { e.preventDefault(); scrollTo('#contact'); }}>
+                Book Free Home Visit
+              </Button>
+              <Button variant="secondary" onClick={(e) => { e.preventDefault(); scrollTo('#portfolio'); }}>
+                Our Works
+              </Button>
             </motion.div>
           )}
         </div>

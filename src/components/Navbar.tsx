@@ -11,9 +11,9 @@ import { cn } from "@/lib/utils";
 const NAV_LINKS = [
   { label: "Our Work", href: "#portfolio", scroll: true },
   { label: "Why Us", href: "#why-choose-us", scroll: true },
-  { label: "Kitchens", href: "#", scroll: false },
-  { label: "Team", href: "#", scroll: false },
-  { label: "FAQ", href: "#", scroll: false },
+  { label: "Kitchens", href: "#kitchens", scroll: true },
+  { label: "Team", href: "#team", scroll: true },
+  { label: "FAQ", href: "#faq", scroll: true },
 ];
 
 export function Navbar() {
@@ -79,7 +79,9 @@ export function Navbar() {
         </nav>
 
         <div className="hidden lg:block">
-          <Button variant="primary">Book Free Home Visit</Button>
+          <Button variant="primary" onClick={(e) => { e.preventDefault(); scrollTo('#contact'); }}>
+            Book Free Home Visit
+          </Button>
         </div>
 
         {/* Mobile Toggle */}
@@ -112,7 +114,7 @@ export function Navbar() {
                 </a>
               ))}
               <div className="mt-4">
-                <Button variant="primary" className="w-full justify-center">
+                <Button variant="primary" className="w-full justify-center" onClick={(e) => { e.preventDefault(); scrollTo('#contact'); setIsMobileMenuOpen(false); }}>
                   Book Free Home Visit
                 </Button>
               </div>

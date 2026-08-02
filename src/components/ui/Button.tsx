@@ -5,20 +5,21 @@ import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: "primary" | "secondary";
+  variant?: "primary" | "secondary" | "outline";
   href?: string;
 }
 
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant = "primary", href, children, ...props }, ref) => {
-    const baseStyles = "relative overflow-hidden px-6 py-3 rounded-md uppercase tracking-wider text-[14px] font-medium transition-colors outline-none";
+    const baseStyles = "relative overflow-hidden px-6 py-3 rounded-md uppercase tracking-wider text-[14px] font-medium transition-colors outline-none border border-transparent";
     
     const variants = {
       primary: "bg-primary text-secondary",
       secondary: "bg-secondary text-primary",
+      outline: "bg-transparent border-white text-white",
     };
 
-    const hoverBg = variant === "primary" ? "bg-white/20" : "bg-primary/10";
+    const hoverBg = variant === "primary" ? "bg-white/20" : variant === "secondary" ? "bg-primary/10" : "bg-white/20";
 
     const content = (
       <motion.button

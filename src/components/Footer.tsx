@@ -22,9 +22,9 @@ export function Footer() {
             <ul className="flex flex-col gap-4">
               <li><a href="#portfolio" className="text-sm font-light hover:text-secondary transition-colors">Our Work</a></li>
               <li><a href="#why-choose-us" className="text-sm font-light hover:text-secondary transition-colors">Why Us</a></li>
-              <li><a href="#" className="text-sm font-light hover:text-secondary transition-colors">Kitchens</a></li>
-              <li><a href="#" className="text-sm font-light hover:text-secondary transition-colors">Team</a></li>
-              <li><a href="#" className="text-sm font-light hover:text-secondary transition-colors">FAQ</a></li>
+              <li><a href="#kitchens" className="text-sm font-light hover:text-secondary transition-colors">Kitchens</a></li>
+              <li><a href="#team" className="text-sm font-light hover:text-secondary transition-colors">Team</a></li>
+              <li><a href="#faq" className="text-sm font-light hover:text-secondary transition-colors">FAQ</a></li>
             </ul>
           </div>
 
@@ -52,6 +52,9 @@ export function Footer() {
         <div className="pt-8 border-t border-white/10 text-center flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs font-light opacity-70">
             &copy; {new Date().getFullYear()} Platinum Interiors. All rights reserved.
+          </p>
+          <p className="text-xs font-light opacity-70">
+            Design by <a href="https://webasi.co" target="_blank" rel="noopener noreferrer" className="hover:text-secondary transition-colors">WEBASI</a>
           </p>
         </div>
       </div>
