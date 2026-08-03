@@ -11,7 +11,7 @@ const REASONS = [
   {
     num: "01",
     icon: Hammer,
-    title: "Built On Construction Expertise",
+    title: "Built on Construction Expertise",
     body: "We Don't Just Design We Build. Our Roots In Aluminium Construction Give Us A Technical Advantage No Pure Design Company Can Match. Every Detail Is Precise, Every Finish Is Engineered To Last.",
   },
   { num: "02", icon: CircleDollarSign, title: "Transparent Pricing", body: "No hidden costs or surprise additions midway through the project. What we quote is what you pay." },

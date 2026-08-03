@@ -79,7 +79,7 @@ export function Navbar() {
         </nav>
 
         <div className="hidden lg:block">
-          <Button variant="primary" onClick={(e) => { e.preventDefault(); window.location.href = 'mailto:hello@platinuminteriors.lk'; }}>
+          <Button variant="primary" onClick={(e) => { e.preventDefault(); scrollTo('#contact'); }}>
             Book Free Home Visit
           </Button>
         </div>
@@ -114,7 +114,7 @@ export function Navbar() {
                 </a>
               ))}
               <div className="mt-4">
-                <Button variant="primary" className="w-full justify-center" onClick={(e) => { e.preventDefault(); window.location.href = 'mailto:hello@platinuminteriors.lk'; setIsMobileMenuOpen(false); }}>
+                <Button variant="primary" className="w-full justify-center" onClick={(e) => { e.preventDefault(); scrollTo('#contact'); setIsMobileMenuOpen(false); }}>
                   Book Free Home Visit
                 </Button>
               </div>

@@ -4,7 +4,10 @@ import React from "react";
 import Image from "next/image";
 import { RevealOnScroll } from "../ui/RevealOnScroll";
 
-const PORTFOLIO_IMAGES = Array.from({ length: 25 }, (_, i) => `/portfolio/p${i + 1}.JPG`);
+const EXCLUDED = new Set([10, 15, 16]);
+const PORTFOLIO_IMAGES = Array.from({ length: 25 }, (_, i) => i + 1)
+  .filter((num) => !EXCLUDED.has(num))
+  .map((num) => `/portfolio/p${num}.JPG`);
 
 export function PortfolioGrid() {
   return (

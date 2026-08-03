@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Button } from "../ui/Button";
 import { StatItem } from "../ui/StatItem";
@@ -28,6 +28,11 @@ const STATS = [
 
 export function HeroSlide({ slide, isActive }: HeroSlideProps) {
   const { scrollTo } = useSmoothScroll();
+  const [currentMonth, setCurrentMonth] = useState<string>("");
+
+  useEffect(() => {
+    setCurrentMonth(new Date().toLocaleString("en-US", { month: "long" }));
+  }, []);
 
   return (
     <div className={cn(
@@ -43,6 +48,21 @@ export function HeroSlide({ slide, isActive }: HeroSlideProps) {
       <div className="relative z-20 container mx-auto px-4 md:px-6 lg:px-8 h-full flex flex-col justify-between pt-24 md:pt-28 pb-6 md:pb-10">
         {/* Top/Middle Main Content */}
         <div className="max-w-3xl lg:max-w-4xl my-auto">
+          {isActive && (
+            <motion.div
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="md:hidden inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary/20 border border-secondary/40 text-secondary text-[11px] font-semibold uppercase tracking-wider mb-3 animate-pulse"
+            >
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+              </span>
+              <span>Limited slots available for {currentMonth || "this month"}</span>
+            </motion.div>
+          )}
+
           {isActive && (
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -91,7 +111,7 @@ export function HeroSlide({ slide, isActive }: HeroSlideProps) {
               transition={{ duration: 0.6, delay: 0.9 }}
               className="flex flex-wrap gap-4"
             >
-              <Button variant="primary" onClick={(e) => { e.preventDefault(); window.location.href = 'mailto:hello@platinuminteriors.lk'; }}>
+              <Button variant="primary" onClick={(e) => { e.preventDefault(); scrollTo('#contact'); }}>
                 Book Free Home Visit
               </Button>
               <Button variant="secondary" onClick={(e) => { e.preventDefault(); scrollTo('#portfolio'); }}>
