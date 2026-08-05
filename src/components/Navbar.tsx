@@ -13,6 +13,8 @@ const NAV_LINKS = [
   { label: "Why Us", href: "#why-choose-us", scroll: true },
   { label: "Kitchens", href: "#kitchens", scroll: true },
   { label: "Team", href: "#team", scroll: true },
+  { label: "Social", href: "#social", scroll: true },
+  { label: "Tools", href: "#tools", scroll: true },
   { label: "FAQ", href: "#faq", scroll: true },
 ];
 
