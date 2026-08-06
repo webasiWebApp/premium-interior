@@ -1,11 +1,11 @@
 "use client";
 
-import { Check, ShieldCheck, Smartphone } from "lucide-react";
+import Image from "next/image";
+import { Check, ShieldCheck } from "lucide-react";
 import { RevealOnScroll } from "../ui/RevealOnScroll";
 import { SectionHeading } from "../ui/SectionHeading";
 import { Button } from "../ui/Button";
 import { useSmoothScroll } from "@/lib/smoothScroll";
-import { cn } from "@/lib/utils";
 
 export function KitchenPackages() {
   const { scrollTo } = useSmoothScroll();
@@ -21,9 +21,9 @@ export function KitchenPackages() {
         />
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-16">
-          {/* Local Package */}
+          {/* Local & Main Package */}
           <RevealOnScroll delay={0.1}>
-            <div className="bg-white rounded-[5px] p-8 lg:p-10  border border-gray-100 flex flex-col h-full relative overflow-hidden transition-all duration-300 ">
+            <div className="bg-white rounded-[5px] p-8 lg:p-10 border border-gray-100 flex flex-col h-full relative overflow-hidden transition-all duration-300">
               <div className="inline-block bg-primary text-white text-[12px] font-medium uppercase tracking-wider px-3 py-1 rounded-[5px] w-fit mb-6">
                 Local Clients · Sri Lanka
               </div>
@@ -48,6 +48,11 @@ export function KitchenPackages() {
                     "3D design preview",
                     "14-day install",
                     "10-year warranty with certificate",
+                    "Daily WhatsApp video updates",
+                    "Video call design consultation",
+                    "USD/GBP/AED payment accepted",
+                    "Full digital documentation",
+                    "Final handover walkthrough video",
                     "Annual check-in call",
                     "Free PDF maintenance guide"
                   ].map((item, i) => (
@@ -61,14 +66,18 @@ export function KitchenPackages() {
 
               <div className="mb-8">
                 <h4 className="text-[14px] font-semibold uppercase tracking-wider text-primary mb-4">Premium Add-Ons</h4>
-                <div className="space-y-2 text-[14px] text-black">
-                  <div className="flex justify-between border-b border-gray-100 pb-2">
-                    <span>Platinum Cupboard Deep Clean Service</span>
-                    <span className="font-medium text-primary">Rs. 20,000</span>
+                <div className="space-y-4 text-[14px] text-black">
+                  <div className="border-b border-gray-100 pb-3">
+                    <div className="font-semibold text-primary mb-0.5">Full cupboard deep clean on handover day</div>
+                    <p className="text-[13px] text-gray-600">Walk into a spotless, ready kitchen from Day 1</p>
                   </div>
-                  <div className="flex justify-between pb-2">
-                    <span>Branded Platinum Cleaning Kit</span>
-                    <span className="font-medium text-primary">Rs. 4,500</span>
+                  <div className="border-b border-gray-100 pb-3">
+                    <div className="font-semibold text-primary mb-0.5">Annual maintenance visit</div>
+                    <p className="text-[13px] text-gray-600">Our team inspects, lubricates hinges, checks seals and resolves minor issues</p>
+                  </div>
+                  <div className="pb-1">
+                    <div className="font-semibold text-primary mb-0.5">Priority response</div>
+                    <p className="text-[13px] text-gray-600">If anything needs attention, you always come first</p>
                   </div>
                 </div>
               </div>
@@ -104,87 +113,16 @@ export function KitchenPackages() {
             </div>
           </RevealOnScroll>
 
-          {/* Overseas Package */}
-          <RevealOnScroll delay={0.2}>
-            <div className="bg-white rounded-[5px] p-8 lg:p-10  border border-gray-100 flex flex-col h-full relative overflow-hidden transition-all duration-300 ">
-              <div className="inline-block bg-secondary text-primary text-[12px] font-medium uppercase tracking-wider px-3 py-1 rounded-[5px] w-fit mb-6">
-                Overseas Clients · International
-              </div>
-              
-              <h3 className="text-[28px] md:text-[32px] font-semibold text-primary mb-2">
-                The Platinum Overseas Kitchen
-              </h3>
-              <p className="text-[16px] text-black font-medium mb-4">
-                Your Dream Kitchen Back Home — We Handle Everything While You're Away
-              </p>
-              
-              <div className="inline-block bg-gray-100 text-gray-700 text-[12px] font-medium px-3 py-1 rounded-[5px] w-fit mb-8">
-                Pricing in USD · GBP · AED
-              </div>
-
-              <div className="mb-8">
-                <h4 className="text-[14px] font-semibold uppercase tracking-wider text-primary mb-4">Everything in Local Package, Plus</h4>
-                <ul className="space-y-3">
-                  {[
-                    "Daily WhatsApp video updates",
-                    "Video call design consultation",
-                    "USD/GBP/AED payment accepted",
-                    "Full digital documentation",
-                    "Final handover walkthrough video",
-                    "10-year warranty",
-                    "Annual check-in call",
-                    "Free PDF guide"
-                  ].map((item, i) => (
-                    <li key={i} className="flex items-start gap-3">
-                      <Check size={18} className="text-secondary mt-0.5 flex-shrink-0" />
-                      <span className="text-[14px] text-black leading-tight">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="mb-8">
-                <h4 className="text-[14px] font-semibold uppercase tracking-wider text-primary mb-4">Premium Add-Ons</h4>
-                <div className="space-y-2 text-[14px] text-black">
-                  <div className="flex justify-between border-b border-gray-100 pb-2">
-                    <span>Deep Clean Service</span>
-                    <span className="font-medium text-primary">Available</span>
-                  </div>
-                  <div className="flex justify-between pb-2">
-                    <span>Branded Cleaning Kit (Delivered & Placed)</span>
-                    <span className="font-medium text-primary">Available</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-[#C1E700]/10 rounded-[5px] p-5 mb-8 flex gap-4 items-start">
-                <Smartphone size={24} className="text-primary flex-shrink-0 mt-1" />
-                <div>
-                  <h5 className="text-[16px] font-medium text-primary mb-1">You Watch It Being Built</h5>
-                  <p className="text-[14px] text-black leading-relaxed">
-                    Watch your kitchen being built every single day from Dubai, Australia or the UK. We handle everything — you approve, we deliver. Backed by our 10-year Platinum Promise.
-                  </p>
-                </div>
-              </div>
-
-              <div className="mt-auto">
-                <div className="border-l-4 border-secondary pl-4 mb-6">
-                  <p className="text-[13px] text-gray-600 italic">
-                    Only 2 overseas projects accepted per month. Dedicated attention and daily communication guaranteed for every international client.
-                  </p>
-                </div>
-                
-                <Button 
-                  variant="secondary" 
-                  className="w-full justify-center mb-4"
-                  onClick={(e) => { e.preventDefault(); scrollTo('#contact'); }}
-                >
-                  Contact Us for International Quote
-                </Button>
-                <p className="text-[12px] text-gray-500 text-center">
-                  28 years experience · 1,000+ completed projects. International pricing quoted in your preferred currency.
-                </p>
-              </div>
+          {/* Package Image Only Column (Hidden on Mobile) */}
+          <RevealOnScroll delay={0.2} className="h-full hidden lg:block">
+            <div className="relative w-full h-full min-h-[450px] lg:min-h-full rounded-[5px] overflow-hidden border border-gray-100 shadow-sm bg-white">
+              <Image 
+                src="/package.jpg" 
+                alt="Kitchen Package" 
+                fill 
+                className="object-cover object-center" 
+                priority
+              />
             </div>
           </RevealOnScroll>
         </div>
@@ -192,3 +130,5 @@ export function KitchenPackages() {
     </section>
   );
 }
+
+
