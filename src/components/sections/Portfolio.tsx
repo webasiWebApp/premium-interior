@@ -11,8 +11,8 @@ export function Portfolio() {
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <RevealOnScroll>
           <SectionHeading
-            heading="Featured Project Highlights"
-            paragraph="Explore A Selection Of Our Most Recent Transformations, Showcasing Our Commitment To Precision Engineering And Premium Design."
+            heading="Featured project highlights"
+            paragraph="Explore a selection of our most recent transformations, showcasing our commitment to precision engineering and premium design."
             className="mb-16"
           />
         </RevealOnScroll>

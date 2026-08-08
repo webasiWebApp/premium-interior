@@ -15,7 +15,7 @@ export function StatBlock({ value, label, className, valueClassName, labelClassN
       <div className={cn("text-[32px] md:text-[40px] text-primary font-bold leading-none", valueClassName)}>
         {value}
       </div>
-      <div className={cn("text-[12px] text-gray-500 font-medium uppercase tracking-wide mt-1", labelClassName)}>
+      <div className={cn("text-[12px] text-gray-500 font-medium tracking-wide mt-1", labelClassName)}>
         {label}
       </div>
     </div>

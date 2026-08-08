@@ -143,8 +143,8 @@ export function ContactForm() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {/* Full Name Field */}
               <div>
-                <label htmlFor="name" className="block text-white text-xs sm:text-sm font-medium uppercase tracking-wider mb-2">
-                  Full Name <span className="text-secondary">*</span>
+                <label htmlFor="name" className="block text-white text-xs sm:text-sm font-medium tracking-wider mb-2">
+                  Full name <span className="text-secondary">*</span>
                 </label>
                 <div className="relative">
                   <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-white/50">
@@ -173,8 +173,8 @@ export function ContactForm() {
 
               {/* Email Address Field */}
               <div>
-                <label htmlFor="email" className="block text-white text-xs sm:text-sm font-medium uppercase tracking-wider mb-2">
-                  Email Address <span className="text-secondary">*</span>
+                <label htmlFor="email" className="block text-white text-xs sm:text-sm font-medium tracking-wider mb-2">
+                  Email address <span className="text-secondary">*</span>
                 </label>
                 <div className="relative">
                   <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-white/50">
@@ -203,8 +203,8 @@ export function ContactForm() {
 
               {/* Phone Number Field */}
               <div>
-                <label htmlFor="phone" className="block text-white text-xs sm:text-sm font-medium uppercase tracking-wider mb-2">
-                  Phone Number <span className="text-secondary">*</span>
+                <label htmlFor="phone" className="block text-white text-xs sm:text-sm font-medium tracking-wider mb-2">
+                  Phone number <span className="text-secondary">*</span>
                 </label>
                 <div className="relative">
                   <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-white/50">
@@ -233,8 +233,8 @@ export function ContactForm() {
 
               {/* Project Place Field */}
               <div>
-                <label htmlFor="projectPlace" className="block text-white text-xs sm:text-sm font-medium uppercase tracking-wider mb-2">
-                  Project Place / Location <span className="text-secondary">*</span>
+                <label htmlFor="projectPlace" className="block text-white text-xs sm:text-sm font-medium tracking-wider mb-2">
+                  Project place / location <span className="text-secondary">*</span>
                 </label>
                 <div className="relative">
                   <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-white/50">
@@ -264,8 +264,8 @@ export function ContactForm() {
 
             {/* Message Field */}
             <div>
-              <label htmlFor="message" className="block text-white text-xs sm:text-sm font-medium uppercase tracking-wider mb-2">
-                Message / Project Details <span className="text-secondary">*</span>
+              <label htmlFor="message" className="block text-white text-xs sm:text-sm font-medium tracking-wider mb-2">
+                Message / project details <span className="text-secondary">*</span>
               </label>
               <div className="relative">
                 <div className="absolute top-3.5 left-0 pl-3.5 flex items-start pointer-events-none text-white/50">
@@ -307,7 +307,7 @@ export function ContactForm() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-secondary text-primary font-semibold uppercase tracking-wider text-xs sm:text-sm px-8 py-4 rounded-lg hover:bg-white transition-all duration-300 shadow-lg hover:shadow-secondary/20 disabled:opacity-70 disabled:cursor-not-allowed group cursor-pointer"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-secondary text-primary font-semibold tracking-wider text-xs sm:text-sm px-8 py-4 rounded-lg hover:bg-white transition-all duration-300 shadow-lg hover:shadow-secondary/20 disabled:opacity-70 disabled:cursor-not-allowed group cursor-pointer"
               >
                 {isSubmitting ? (
                   <>
@@ -316,7 +316,7 @@ export function ContactForm() {
                   </>
                 ) : (
                   <>
-                    <span>Submit Inquiry</span>
+                    <span>Submit inquiry</span>
                     <Send size={16} className="group-hover:translate-x-1 transition-transform" />
                   </>
                 )}
@@ -337,7 +337,7 @@ export function ContactForm() {
             </div>
 
             <h3 className="text-2xl sm:text-3xl font-semibold text-white">
-              Thank You, {formData.name}!
+              Thank you, {formData.name}!
             </h3>
 
             <p className="text-white/90 text-sm sm:text-base max-w-lg mx-auto leading-relaxed">
@@ -354,9 +354,9 @@ export function ContactForm() {
             <div className="pt-4">
               <button
                 onClick={handleReset}
-                className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-medium text-xs uppercase tracking-wider px-6 py-3 rounded-lg border border-white/20 transition-all cursor-pointer"
+                className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-medium text-xs tracking-wider px-6 py-3 rounded-lg border border-white/20 transition-all cursor-pointer"
               >
-                <span>Submit Another Request</span>
+                <span>Submit another request</span>
                 <ArrowRight size={14} />
               </button>
             </div>

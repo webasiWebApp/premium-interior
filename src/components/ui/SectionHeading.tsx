@@ -32,7 +32,7 @@ export function SectionHeading({
       {eyebrow && (
         <div className="flex items-center justify-center gap-2">
           <span className="w-2 h-2 rounded-full bg-secondary"></span>
-          <span className="text-[14px] font-medium uppercase tracking-wider text-primary">
+          <span className="text-[14px] font-medium tracking-wider text-primary">
             {eyebrow}
           </span>
           <span className="w-2 h-2 rounded-full bg-secondary"></span>

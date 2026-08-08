@@ -17,9 +17,9 @@ export function Materials() {
     <section className="py-24 bg-white">
       <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-[1200px]">
         <SectionHeading 
-          eyebrow="Quality You Can Trust" 
-          title="Materials & Brands We Use"
-          description="We only work with Sri Lanka's most trusted and certified material brands — because your home deserves nothing less."
+          eyebrow="Quality you can trust" 
+          title="Materials & brands we use"
+          description="We only work with Sri Lanka's most trusted and certified material brands, because your home deserves nothing less."
           centered
         />
         
@@ -58,7 +58,7 @@ export function Materials() {
 
         <RevealOnScroll delay={0.4}>
           <p className="text-[13px] text-gray-500 text-center mt-12 max-w-2xl mx-auto">
-            All materials used in Platinum Interiors projects meet international quality standards — selected for durability, finish quality and long-term performance.
+            All materials used in Platinum Interiors projects meet international quality standards, selected for durability, finish quality and long-term performance.
           </p>
         </RevealOnScroll>
       </div>

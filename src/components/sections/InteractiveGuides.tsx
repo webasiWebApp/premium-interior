@@ -6,20 +6,20 @@ import { ExternalLink, Triangle, Tv } from "lucide-react";
 
 const tools = [
   {
-    title: "Kitchen Triangle Calculator",
+    title: "Kitchen triangle calculator",
     description: "Calculate optimal distances between your sink, stove, and refrigerator for maximum kitchen ergonomics and efficiency.",
     icon: Triangle,
     url: "https://shamalweerasiri.github.io/kitchen-triangle/",
-    badge: "Kitchen Planning",
-    buttonText: "Launch Calculator",
+    badge: "Kitchen planning",
+    buttonText: "Launch calculator",
   },
   {
-    title: "TV Viewing Distance Guide",
+    title: "TV viewing distance guide",
     description: "Find the ideal TV screen size and recommended seating distance for your living room or home theater setup.",
     icon: Tv,
     url: "https://helloplatinuminteriors-droid.github.io/TV-View-Guide/",
-    badge: "Living Room Planning",
-    buttonText: "Launch TV Guide",
+    badge: "Living room planning",
+    buttonText: "Launch TV guide",
   },
 ];
 
@@ -28,8 +28,8 @@ export function InteractiveGuides() {
     <section id="tools" className="py-20 bg-white border-t border-b border-gray-200">
       <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-[1200px]">
         <SectionHeading
-          eyebrow="Interactive Design Tools"
-          title="Free Planning Guides & Calculators"
+          eyebrow="Interactive design tools"
+          title="Free planning guides & calculators"
           description="Use our custom web calculators to plan your kitchen workflow ergonomics and living room viewing distances."
           centered
         />
@@ -49,7 +49,7 @@ export function InteractiveGuides() {
                       <div className="w-10 h-10 rounded-[5px] bg-primary text-secondary flex items-center justify-center">
                         <Icon size={20} />
                       </div>
-                      <span className="text-[11px] font-semibold uppercase tracking-wider text-primary bg-primary/10 px-3 py-1 rounded-[5px]">
+                      <span className="text-[11px] font-semibold tracking-wider text-primary bg-primary/10 px-3 py-1 rounded-[5px]">
                         {tool.badge}
                       </span>
                     </div>
@@ -67,7 +67,7 @@ export function InteractiveGuides() {
                     href={tool.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 bg-primary text-secondary text-xs font-medium uppercase tracking-wider py-3 px-6 rounded-[5px] transition-colors hover:bg-primary/90 w-full"
+                    className="inline-flex items-center justify-center gap-2 bg-primary text-secondary text-xs font-medium tracking-wider py-3 px-6 rounded-[5px] transition-colors hover:bg-primary/90 w-full"
                   >
                     <span>{tool.buttonText}</span>
                     <ExternalLink size={14} />

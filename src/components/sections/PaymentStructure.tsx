@@ -5,9 +5,9 @@ import { RevealOnScroll } from "../ui/RevealOnScroll";
 import { SectionHeading } from "../ui/SectionHeading";
 
 const stages = [
-  { icon: ClipboardList, stage: "Stage 01", pct: "50%", name: "Design Approval", body: "Due upon signing the project agreement and approving your final 3D design. Confirms your booking and secures your project slot." },
-  { icon: Hammer, stage: "Stage 02", pct: "25%", name: "Mid-Project", body: "Due at the midpoint of installation, once core structural work is completed and verified on site." },
-  { icon: Trophy, stage: "Stage 03", pct: "25%", name: "Final Handover", body: "Due upon full project completion, client walkthrough and your complete satisfaction — before we hand over your keys." },
+  { icon: ClipboardList, stage: "Stage 01", pct: "50%", name: "Design approval", body: "Due upon signing the project agreement and approving your final 3D design. Confirms your booking and secures your project slot." },
+  { icon: Hammer, stage: "Stage 02", pct: "25%", name: "Mid-project", body: "Due at the midpoint of installation, once core structural work is completed and verified on site." },
+  { icon: Trophy, stage: "Stage 03", pct: "25%", name: "Final handover", body: "Due upon full project completion, client walkthrough and your complete satisfaction before we hand over your keys." },
 ];
 
 export function PaymentStructure() {
@@ -15,8 +15,8 @@ export function PaymentStructure() {
     <section className="py-24 bg-white relative overflow-hidden">
       <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-[1200px]">
         <SectionHeading 
-          eyebrow="Transparent & Secure" 
-          title="Payment Structure"
+          eyebrow="Transparent & secure" 
+          title="Payment structure"
           description="Our transparent 3-stage payment plan ensures your project is delivered with complete commitment from both sides."
           centered
         />
@@ -33,7 +33,7 @@ export function PaymentStructure() {
                     <item.icon size={36} className="text-secondary" />
                   </div>
                   
-                  <div className="text-[12px] text-gray-500 font-medium uppercase tracking-widest mb-2">
+                  <div className="text-[12px] text-gray-500 font-medium tracking-widest mb-2">
                     {item.stage}
                   </div>
                   
@@ -57,7 +57,7 @@ export function PaymentStructure() {
         <RevealOnScroll delay={0.4}>
           <div className="mt-20 bg-[#C1E700]/20 rounded-[5px] p-6 md:p-8 text-center max-w-3xl mx-auto border border-[#C1E700]/30">
             <p className="text-[15px] md:text-[16px] text-primary font-medium leading-relaxed">
-              Your protection matters to us. The final payment is only requested after you have personally inspected the completed work and confirmed your satisfaction. We do not request full payment upfront — ever.
+              Your protection matters to us. The final payment is only requested after you have personally inspected the completed work and confirmed your satisfaction. We do not request full payment upfront.
             </p>
           </div>
         </RevealOnScroll>

@@ -8,35 +8,35 @@ import { cn } from "@/lib/utils";
 const slidesData: SlideData[] = [
   {
     bg: "/herobg1.png",
-    eyebrow: "28 YEARS · SRI LANKA'S TRUSTED INTERIORS TEAM",
+    eyebrow: "28 years · Sri Lanka's trusted interiors team",
     headline: [
-      { text: "FEEL PROUD", color: "secondary" },
-      { text: "EVERY TIME", color: "white" },
-      { text: "YOU WALK IN", color: "white" },
+      { text: "Feel proud", color: "secondary" },
+      { text: "every time", color: "white" },
+      { text: "you walk in", color: "white" },
     ],
-    body: "Platinum Interiors Designs, Builds And Installs Premium Windows, Doors, Glass Panels And Kitchens With A Full 3D Preview Before We Start, And Your Complete Dream Kitchen Delivered In As Little As 14 Days.",
+    body: "Platinum Interiors designs, builds and installs premium windows, doors, glass panels and kitchens with a full 3D preview before we start, and your complete dream kitchen delivered in as little as 14 days.",
   },
   {
     bg: "/herobg2.png",
-    eyebrow: "TRUSTED BY FAMILIES IN DUBAI, AUSTRALIA & THE UK",
+    eyebrow: "Trusted by families in Dubai, Australia & the UK",
     headline: [
-      { text: "HOME IS WHERE", color: "white" },
-      { text: "WE'RE", color: "secondary" },
-      { text: "BUILDING", color: "white" },
-      { text: "FOR YOU", color: "white" },
+      { text: "Home is where", color: "white" },
+      { text: "we're", color: "secondary" },
+      { text: "building", color: "white" },
+      { text: "for you", color: "white" },
     ],
-    body: "Living Overseas Doesn't Mean Compromising On Your Dream Home. Get Daily WhatsApp Video Updates, Video-Call Design Consultations, And A Final Walkthrough — All While We Handle Everything Back In Sri Lanka.",
+    body: "Living overseas doesn't mean compromising on your dream home. Get daily WhatsApp video updates, video-call design consultations, and a final walkthrough, all while we handle everything back in Sri Lanka.",
   },
   {
     bg: "/herobg3.png",
-    eyebrow: "1,000+ PROJECTS · 10-YEAR OFFICIAL WARRANTY",
+    eyebrow: "1,000+ projects · 10-year official warranty",
     headline: [
-      { text: "YOUR DREAM", color: "white" },
-      { text: "KITCHEN,", color: "secondary" },
-      { text: "BUILT IN", color: "white" },
-      { text: "JUST 14 DAYS.", color: "white" },
+      { text: "Your dream", color: "white" },
+      { text: "kitchen,", color: "secondary" },
+      { text: "built in", color: "white" },
+      { text: "just 14 days.", color: "white" },
     ],
-    body: "From Free Measurement To Final Handover, We Design, Build And Install Your Complete Kitchen Transformation Backed By A 10-Year Warranty Nobody Else In Sri Lanka Offers.",
+    body: "From free measurement to final handover, we design, build and install your complete kitchen transformation backed by a 10-year warranty nobody else in Sri Lanka offers.",
   },
 ];
 

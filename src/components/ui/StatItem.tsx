@@ -17,7 +17,7 @@ export function StatItem({ number, suffix = "", label, startTrigger = true }: St
       <div className="text-[32px] text-white font-light whitespace-nowrap">
         {count}{suffix}
       </div>
-      <div className="text-[12px] text-white font-light uppercase tracking-wide">
+      <div className="text-[12px] text-white font-light tracking-wide">
         {label}
       </div>
     </div>

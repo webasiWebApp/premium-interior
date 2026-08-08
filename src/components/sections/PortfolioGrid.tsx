@@ -24,8 +24,8 @@ export function PortfolioGrid() {
               loading="lazy"
             />
             <div className="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-              <span className="text-secondary font-medium tracking-wider uppercase text-sm transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                View Project
+              <span className="text-secondary font-medium tracking-wider text-sm transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                View project
               </span>
             </div>
           </div>

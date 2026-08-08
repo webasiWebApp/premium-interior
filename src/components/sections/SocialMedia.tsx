@@ -22,8 +22,8 @@ export function SocialMedia() {
     <section id="social" className="py-24 bg-gray-50">
       <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-[1200px]">
         <SectionHeading
-          eyebrow="Stay Connected"
-          title="Follow Us On Social Media"
+          eyebrow="Stay connected"
+          title="Follow us on social media"
           description="Join our online community to see our latest kitchen transformations, interior design ideas, and client stories."
           centered
         />
@@ -61,21 +61,21 @@ export function SocialMedia() {
               {/* TikTok Stats */}
               <div className="grid grid-cols-3 gap-2 py-6 my-4 bg-gray-50 rounded-[5px] border border-gray-100 text-center">
                 <div>
-                  <div className="flex items-center justify-center gap-1 text-gray-500 text-[11px] font-medium uppercase tracking-wider mb-1">
+                  <div className="flex items-center justify-center gap-1 text-gray-500 text-[11px] font-medium tracking-wider mb-1">
                     <UserCheck size={12} />
                     <span>Following</span>
                   </div>
                   <div className="text-xl font-bold text-primary">0</div>
                 </div>
                 <div className="border-x border-gray-200">
-                  <div className="flex items-center justify-center gap-1 text-gray-500 text-[11px] font-medium uppercase tracking-wider mb-1">
+                  <div className="flex items-center justify-center gap-1 text-gray-500 text-[11px] font-medium tracking-wider mb-1">
                     <Users size={12} />
                     <span>Followers</span>
                   </div>
                   <div className="text-xl font-bold text-primary">8554</div>
                 </div>
                 <div>
-                  <div className="flex items-center justify-center gap-1 text-gray-500 text-[11px] font-medium uppercase tracking-wider mb-1">
+                  <div className="flex items-center justify-center gap-1 text-gray-500 text-[11px] font-medium tracking-wider mb-1">
                     <Heart size={12} />
                     <span>Likes</span>
                   </div>
@@ -137,14 +137,14 @@ export function SocialMedia() {
               {/* Facebook Stats */}
               <div className="grid grid-cols-2 gap-2 py-6 my-4 bg-gray-50 rounded-[5px] border border-gray-100 text-center">
                 <div className="border-r border-gray-200">
-                  <div className="flex items-center justify-center gap-1 text-gray-500 text-[11px] font-medium uppercase tracking-wider mb-1">
+                  <div className="flex items-center justify-center gap-1 text-gray-500 text-[11px] font-medium tracking-wider mb-1">
                     <Users size={12} />
                     <span>Followers</span>
                   </div>
                   <div className="text-xl font-bold text-primary">22K</div>
                 </div>
                 <div>
-                  <div className="flex items-center justify-center gap-1 text-gray-500 text-[11px] font-medium uppercase tracking-wider mb-1">
+                  <div className="flex items-center justify-center gap-1 text-gray-500 text-[11px] font-medium tracking-wider mb-1">
                     <UserCheck size={12} />
                     <span>Following</span>
                   </div>
@@ -157,7 +157,7 @@ export function SocialMedia() {
                 <div className="bg-gray-50 p-6 rounded-[5px] border border-gray-100 mb-6 flex-grow flex flex-col justify-center">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 inline-block"></span>
-                    <span className="text-xs font-semibold uppercase tracking-wider text-primary">Official Facebook Page</span>
+                    <span className="text-xs font-semibold tracking-wider text-primary">Official Facebook page</span>
                   </div>
                   <h4 className="text-lg font-bold text-primary mb-2">The Platinum Interiors</h4>
                   <p className="text-sm text-gray-600 leading-relaxed mb-4">
@@ -178,9 +178,9 @@ export function SocialMedia() {
                   href="https://web.facebook.com/Theplatinuminteriors/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full text-center bg-primary text-secondary text-xs font-medium uppercase tracking-wider py-3 rounded-[5px] transition-colors hover:bg-primary/90 block"
+                  className="w-full text-center bg-primary text-secondary text-xs font-medium tracking-wider py-3 rounded-[5px] transition-colors hover:bg-primary/90 block"
                 >
-                  Visit Facebook Page
+                  Visit Facebook page
                 </a>
               </div>
             </div>

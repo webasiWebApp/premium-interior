@@ -11,7 +11,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant = "primary", href, children, ...props }, ref) => {
-    const baseStyles = "relative overflow-hidden px-6 py-3 rounded-md uppercase tracking-wider text-[14px] font-medium transition-colors outline-none border border-transparent";
+    const baseStyles = "relative overflow-hidden px-6 py-3 rounded-md tracking-wider text-[14px] font-medium transition-colors outline-none border border-transparent";
     
     const variants = {
       primary: "bg-primary text-secondary",

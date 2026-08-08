@@ -11,14 +11,14 @@ const REASONS = [
   {
     num: "01",
     icon: Hammer,
-    title: "Built on Construction Expertise",
-    body: "We Don't Just Design We Build. Our Roots In Aluminium Construction Give Us A Technical Advantage No Pure Design Company Can Match. Every Detail Is Precise, Every Finish Is Engineered To Last.",
+    title: "Built on construction expertise",
+    body: "We don't just design we build. Our roots in aluminium construction give us a technical advantage no pure design company can match. Every detail is precise, every finish is engineered to last.",
   },
-  { num: "02", icon: CircleDollarSign, title: "Transparent Pricing", body: "No hidden costs or surprise additions midway through the project. What we quote is what you pay." },
-  { num: "03", icon: Gem, title: "Premium Materials", body: "We source only the highest quality materials to ensure durability, aesthetics, and long-lasting performance in every project." },
-  { num: "04", icon: Briefcase, title: "End-to-End Service", body: "From initial 3D visualization to final installation, we handle everything so you don't have to manage multiple contractors." },
-  { num: "05", icon: ShieldCheck, title: "10-Year Warranty", body: "We stand by our work. Our official 10-year warranty gives you complete peace of mind on all installations and craftsmanship." },
-  { num: "06", icon: Zap, title: "Fast Delivery", body: "We respect your time. Our streamlined process allows us to deliver complete dream kitchens in as little as 14 days." },
+  { num: "02", icon: CircleDollarSign, title: "Transparent pricing", body: "No hidden costs or surprise additions midway through the project. What we quote is what you pay." },
+  { num: "03", icon: Gem, title: "Premium materials", body: "We source only the highest quality materials to ensure durability, aesthetics, and long-lasting performance in every project." },
+  { num: "04", icon: Briefcase, title: "End-to-end service", body: "From initial 3D visualization to final installation, we handle everything so you don't have to manage multiple contractors." },
+  { num: "05", icon: ShieldCheck, title: "10-year warranty", body: "We stand by our work. Our official 10-year warranty gives you complete peace of mind on all installations and craftsmanship." },
+  { num: "06", icon: Zap, title: "Fast delivery", body: "We respect your time. Our streamlined process allows us to deliver complete dream kitchens in as little as 14 days." },
 ];
 
 export function WhyChooseUs() {
@@ -30,8 +30,8 @@ export function WhyChooseUs() {
           <div className="lg:w-5/12 lg:sticky lg:top-32 flex flex-col gap-12">
             <RevealOnScroll>
               <SectionHeading
-                heading="Why Choose Platinum Interiors?"
-                paragraph="In A Market Full Of Choices, Here Is Why We Stand Out As Sri Lanka's Most Trusted Interiors Team."
+                heading="Why choose Platinum Interiors?"
+                paragraph="In a market full of choices, here is why we stand out as Sri Lanka's most trusted interiors team."
               />
             </RevealOnScroll>
             

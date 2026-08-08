@@ -9,8 +9,8 @@ import { useSmoothScroll } from "@/lib/smoothScroll";
 import { cn } from "@/lib/utils";
 
 const NAV_LINKS = [
-  { label: "Our Work", href: "#portfolio", scroll: true },
-  { label: "Why Us", href: "#why-choose-us", scroll: true },
+  { label: "Our work", href: "#portfolio", scroll: true },
+  { label: "Why us", href: "#why-choose-us", scroll: true },
   { label: "Kitchens", href: "#kitchens", scroll: true },
   { label: "Team", href: "#team", scroll: true },
   { label: "Social", href: "#social", scroll: true },
@@ -82,7 +82,7 @@ export function Navbar() {
 
         <div className="hidden lg:block">
           <Button variant="primary" onClick={(e) => { e.preventDefault(); scrollTo('#contact'); }}>
-            Book Free Home Visit
+            Book free home visit
           </Button>
         </div>
 
@@ -117,7 +117,7 @@ export function Navbar() {
               ))}
               <div className="mt-4">
                 <Button variant="primary" className="w-full justify-center" onClick={(e) => { e.preventDefault(); scrollTo('#contact'); setIsMobileMenuOpen(false); }}>
-                  Book Free Home Visit
+                  Book free home visit
                 </Button>
               </div>
             </nav>

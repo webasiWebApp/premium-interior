@@ -20,10 +20,10 @@ interface HeroSlideProps {
 }
 
 const STATS = [
-  { num: 28, label: "Years In Business", suffix: "" },
-  { num: 1000, label: "Projects Completed", suffix: "+" },
-  { num: 10, label: "Official Warranty", suffix: " Yr" },
-  { num: 14, label: "Project Delivery", suffix: " Day" },
+  { num: 28, label: "Years in business", suffix: "" },
+  { num: 1000, label: "Projects completed", suffix: "+" },
+  { num: 10, label: "Official warranty", suffix: " Yr" },
+  { num: 14, label: "Project delivery", suffix: " Day" },
 ];
 
 export function HeroSlide({ slide, isActive }: HeroSlideProps) {
@@ -53,7 +53,7 @@ export function HeroSlide({ slide, isActive }: HeroSlideProps) {
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="md:hidden inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary/20 border border-secondary/40 text-secondary text-[11px] font-semibold uppercase tracking-wider mb-3 animate-pulse"
+              className="md:hidden inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary/20 border border-secondary/40 text-secondary text-[11px] font-semibold tracking-wider mb-3 animate-pulse"
             >
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
@@ -68,7 +68,7 @@ export function HeroSlide({ slide, isActive }: HeroSlideProps) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-white text-xs sm:text-sm font-medium mb-3 tracking-wider uppercase"
+              className="text-white text-xs sm:text-sm font-medium mb-3 tracking-wider"
             >
               {slide.eyebrow}
             </motion.p>
@@ -112,10 +112,10 @@ export function HeroSlide({ slide, isActive }: HeroSlideProps) {
               className="flex flex-wrap gap-4"
             >
               <Button variant="primary" onClick={(e) => { e.preventDefault(); scrollTo('#contact'); }}>
-                Book Free Home Visit
+                Book free home visit
               </Button>
               <Button variant="secondary" onClick={(e) => { e.preventDefault(); scrollTo('#portfolio'); }}>
-                Our Works
+                Our works
               </Button>
             </motion.div>
           )}

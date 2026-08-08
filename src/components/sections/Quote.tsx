@@ -26,10 +26,10 @@ export function Quote() {
           
           <div className="relative z-10">
             <h2 className="text-4xl md:text-5xl lg:text-[64px] font-semibold text-secondary leading-tight mb-8">
-              We Shape Our Buildings, Thereafter They Shape Us
+              We shape our buildings, thereafter they shape us
             </h2>
             <p className="text-xl md:text-2xl font-light text-white">
-              — Winston Churchill
+              Winston Churchill
             </p>
           </div>
         </RevealOnScroll>

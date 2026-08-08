@@ -15,7 +15,7 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-secondary font-semibold text-lg mb-6 border-b border-secondary/30 pb-2 inline-block">Contact Us</h3>
+            <h3 className="text-secondary font-semibold text-lg mb-6 border-b border-secondary/30 pb-2 inline-block">Contact us</h3>
             <ul className="flex flex-col gap-4">
               <li className="text-sm font-light opacity-90">123 Interior Avenue, Colombo, Sri Lanka</li>
               <li className="text-sm font-light opacity-90">+94 11 234 5678</li>
@@ -25,7 +25,7 @@ export function Footer() {
 
           {/* Social */}
           <div>
-            <h3 className="text-secondary font-semibold text-lg mb-6 border-b border-secondary/30 pb-2 inline-block">Follow Us</h3>
+            <h3 className="text-secondary font-semibold text-lg mb-6 border-b border-secondary/30 pb-2 inline-block">Follow us</h3>
             <div className="flex gap-4">
               <a 
                 href="https://web.facebook.com/people/Platinum-Interiors/61586214477243/#" 

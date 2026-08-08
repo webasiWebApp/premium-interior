@@ -19,12 +19,12 @@ export function FinalCTA() {
           transition={{ duration: 0.6 }}
           className="flex flex-col items-center mb-12"
         >
-          <div className="text-secondary text-xs sm:text-sm font-semibold uppercase tracking-widest mb-3">
-            Book Your Free Home Visit & 3D Preview
+          <div className="text-secondary text-xs sm:text-sm font-semibold tracking-widest mb-3">
+            Book your free home visit & 3D preview
           </div>
           
           <h2 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-[56px] font-semibold leading-tight max-w-3xl mb-4">
-            Trusted by Families Across Sri Lanka & Beyond
+            Trusted by families across Sri Lanka & beyond
           </h2>
           
           <p className="text-secondary text-base sm:text-lg md:text-xl font-light italic max-w-2xl">
@@ -60,7 +60,7 @@ export function FinalCTA() {
               className="inline-flex items-center gap-2 border-white/30 text-white hover:bg-white/10 text-xs sm:text-sm"
             >
               <MessageCircle size={16} className="text-secondary" />
-              <span>DM Us on WhatsApp</span>
+              <span>DM us on WhatsApp</span>
             </Button>
 
             <a

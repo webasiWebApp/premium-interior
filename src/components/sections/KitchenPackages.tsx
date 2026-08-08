@@ -14,8 +14,8 @@ export function KitchenPackages() {
     <section id="kitchens" className="py-24 bg-gray-50">
       <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-[1200px]">
         <SectionHeading 
-          eyebrow="Choose Your Package" 
-          title="Kitchen Packages"
+          eyebrow="Choose your package" 
+          title="Kitchen packages"
           description="Whether you're renovating at home or building your dream kitchen from overseas, we make it simple and transparent."
           centered
         />
@@ -24,23 +24,21 @@ export function KitchenPackages() {
           {/* Local & Main Package */}
           <RevealOnScroll delay={0.1}>
             <div className="bg-white rounded-[5px] p-8 lg:p-10 border border-gray-100 flex flex-col h-full relative overflow-hidden transition-all duration-300">
-              <div className="inline-block bg-primary text-white text-[12px] font-medium uppercase tracking-wider px-3 py-1 rounded-[5px] w-fit mb-6">
-                Local Clients · Sri Lanka
-              </div>
+              
               
               <h3 className="text-[28px] md:text-[32px] font-semibold text-primary mb-2">
-                The Platinum Kitchen Transformation
+                The Platinum kitchen transformation
               </h3>
               <p className="text-[16px] text-black font-medium mb-4">
-                Designed, Built & Guaranteed — In Just 14 Days
+                Designed, built & guaranteed in just 14 days
               </p>
               
               <div className="inline-block bg-gray-100 text-gray-700 text-[12px] font-medium px-3 py-1 rounded-[5px] w-fit mb-8">
-                Free Home Visit · Custom Quote
+                Free home visit · Custom quote
               </div>
 
               <div className="mb-8">
-                <h4 className="text-[14px] font-semibold uppercase tracking-wider text-primary mb-4">What You Receive</h4>
+                <h4 className="text-[14px] font-semibold tracking-wider text-primary mb-4">What you receive</h4>
                 <ul className="space-y-3">
                   {[
                     "Free home visit & measurement",
@@ -50,7 +48,6 @@ export function KitchenPackages() {
                     "10-year warranty with certificate",
                     "Daily WhatsApp video updates",
                     "Video call design consultation",
-                    "USD/GBP/AED payment accepted",
                     "Full digital documentation",
                     "Final handover walkthrough video",
                     "Annual check-in call",
@@ -65,7 +62,7 @@ export function KitchenPackages() {
               </div>
 
               <div className="mb-8">
-                <h4 className="text-[14px] font-semibold uppercase tracking-wider text-primary mb-4">Premium Add-Ons</h4>
+                <h4 className="text-[14px] font-semibold tracking-wider text-primary mb-4">Premium add-ons</h4>
                 <div className="space-y-4 text-[14px] text-black">
                   <div className="border-b border-gray-100 pb-3">
                     <div className="font-semibold text-primary mb-0.5">Full cupboard deep clean on handover day</div>
@@ -85,9 +82,9 @@ export function KitchenPackages() {
               <div className="bg-primary/5 rounded-[5px] p-5 mb-8 flex gap-4 items-start">
                 <ShieldCheck size={24} className="text-primary flex-shrink-0 mt-1" />
                 <div>
-                  <h5 className="text-[16px] font-medium text-primary mb-1">The Platinum Promise</h5>
+                  <h5 className="text-[16px] font-medium text-primary mb-1">The Platinum promise</h5>
                   <p className="text-[14px] text-black leading-relaxed">
-                    If anything we install has a defect within 10 years, we fix it — free. No questions asked. Every year, we personally call to ensure everything remains perfect.
+                    If anything we install has a defect within 10 years, we fix it for free. No questions asked. Every year, we personally call to ensure everything remains perfect.
                   </p>
                 </div>
               </div>
@@ -104,7 +101,7 @@ export function KitchenPackages() {
                   className="w-full justify-center mb-4"
                   onClick={(e) => { e.preventDefault(); scrollTo('#contact'); }}
                 >
-                  Book Your Free Home Visit
+                  Book your free home visit
                 </Button>
                 <p className="text-[12px] text-gray-500 text-center">
                   Price calculated after free site visit & measurement. Quotation provided at zero cost, zero obligation.

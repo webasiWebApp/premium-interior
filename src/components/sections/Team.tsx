@@ -11,16 +11,16 @@ const team = [
     role: "Manager",
     name: "Shamal Weerasiri",
     credential: "BSc (Hons) Quantity Surveying",
-    bio: "The driving force behind Platinum Interiors — combining modern design vision with professional quantity surveying expertise to deliver projects on time, on budget and beyond expectations.",
-    chips: ["Design Strategy", "Project Costing", "Client Relations"],
+    bio: "The driving force behind Platinum Interiors, combining modern design vision with professional quantity surveying expertise to deliver projects on time, on budget and beyond expectations.",
+    chips: ["Design strategy", "Project costing", "Client relations"],
   },
   {
     photo: "/team/Sarath Premathilaka.jpg",
-    role: "Proprietor & Founder",
+    role: "Proprietor & founder",
     name: "Sarath Premathilaka",
     credential: "28 Years Industry Experience",
     bio: "With over 28 years in construction and interior business and more than 1,000 completed projects, Sarath brings unmatched practical expertise, loyal client relationships and an unwavering commitment to quality.",
-    stats: [{ value: "28", label: "Years Exp" }, { value: "1000+", label: "Projects" }],
+    stats: [{ value: "28", label: "Years exp" }, { value: "1000+", label: "Projects" }],
   },
 ];
 
@@ -29,9 +29,9 @@ export function Team() {
     <section id="team" className="py-24 bg-gray-50">
       <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-[1200px]">
         <SectionHeading 
-          eyebrow="The People Behind Every Project" 
-          title="Meet Our Team"
-          description="Every project carries the weight of our name — and two generations of expertise."
+          eyebrow="The people behind every project" 
+          title="Meet our team"
+          description="Every project carries the weight of our name and two generations of expertise."
           centered
         />
         
@@ -49,7 +49,7 @@ export function Team() {
                 </div>
                 
                 <div className="flex flex-col justify-center flex-grow py-2">
-                  <div className="text-[12px] font-medium uppercase tracking-widest text-secondary bg-secondary/10 w-fit px-3 py-1 rounded-[5px] mb-4">
+                  <div className="text-[12px] font-medium tracking-widest text-secondary bg-secondary/10 w-fit px-3 py-1 rounded-[5px] mb-4">
                     {member.role}
                   </div>
                   
