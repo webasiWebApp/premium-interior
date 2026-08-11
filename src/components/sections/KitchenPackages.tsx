@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Check, ShieldCheck } from "lucide-react";
+import { Check, ShieldCheck, Sparkles, Gift, Tag, Clock } from "lucide-react";
 import { RevealOnScroll } from "../ui/RevealOnScroll";
 import { SectionHeading } from "../ui/SectionHeading";
 import { Button } from "../ui/Button";
@@ -62,19 +62,54 @@ export function KitchenPackages() {
               </div>
 
               <div className="mb-8">
-                <h4 className="text-[14px] font-semibold tracking-wider text-primary mb-4">Premium add-ons</h4>
-                <div className="space-y-4 text-[14px] text-black">
-                  <div className="border-b border-gray-100 pb-3">
-                    <div className="font-semibold text-primary mb-0.5">Full cupboard deep clean on handover day</div>
-                    <p className="text-[13px] text-gray-600">Walk into a spotless, ready kitchen from Day 1</p>
+                <div className="flex items-center justify-between mb-4">
+                  <h4 className="text-[14px] font-semibold tracking-wider text-primary uppercase">
+                    Premium Add-on: Platinum Care Plan
+                  </h4>
+                  <span className="text-[11px] font-medium bg-primary/10 text-primary px-2.5 py-0.5 rounded-full">
+                    Optional Package
+                  </span>
+                </div>
+                
+                <div className="bg-gray-50/80 rounded-[5px] p-5 border border-gray-100 space-y-4">
+                  <div className="flex items-start gap-3">
+                    <Sparkles size={18} className="text-secondary mt-0.5 flex-shrink-0" />
+                    <div>
+                      <div className="font-semibold text-primary text-[14px]">Bi-Annual Deep Cleaning Service</div>
+                      <p className="text-[13px] text-gray-600 mt-0.5">
+                        Enjoy a complimentary professional deep cleaning service once every 6 months to keep your kitchen looking immaculate.
+                      </p>
+                    </div>
                   </div>
-                  <div className="border-b border-gray-100 pb-3">
-                    <div className="font-semibold text-primary mb-0.5">Annual maintenance visit</div>
-                    <p className="text-[13px] text-gray-600">Our team inspects, lubricates hinges, checks seals and resolves minor issues</p>
+
+                  <div className="flex items-start gap-3 border-t border-gray-200/60 pt-3">
+                    <Gift size={18} className="text-secondary mt-0.5 flex-shrink-0" />
+                    <div>
+                      <div className="font-semibold text-primary text-[14px]">Complimentary Premium Kitchen Care Kit</div>
+                      <p className="text-[13px] text-gray-600 mt-0.5">
+                        Includes a specialized cleaning spray, magic erasing sponges, absorbent wiping cloths, and high-performance microfiber cloths.
+                      </p>
+                    </div>
                   </div>
-                  <div className="pb-1">
-                    <div className="font-semibold text-primary mb-0.5">Priority response</div>
-                    <p className="text-[13px] text-gray-600">If anything needs attention, you always come first</p>
+
+                  <div className="flex items-start gap-3 border-t border-gray-200/60 pt-3">
+                    <Tag size={18} className="text-secondary mt-0.5 flex-shrink-0" />
+                    <div>
+                      <div className="font-semibold text-primary text-[14px]">Exclusive Member Rates for Future Projects</div>
+                      <p className="text-[13px] text-gray-600 mt-0.5">
+                        Benefit from preferred membership pricing and special discounts on all your upcoming home enhancement projects.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3 border-t border-gray-200/60 pt-3">
+                    <Clock size={18} className="text-secondary mt-0.5 flex-shrink-0" />
+                    <div>
+                      <div className="font-semibold text-primary text-[14px]">Priority Service & Maintenance Scheduling</div>
+                      <p className="text-[13px] text-gray-600 mt-0.5">
+                        Receive top-priority positioning for all service requests and maintenance needs whenever you require assistance.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
