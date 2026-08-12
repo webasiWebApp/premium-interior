@@ -17,9 +17,32 @@ export function Footer() {
           <div>
             <h3 className="text-secondary font-semibold text-lg mb-6 border-b border-secondary/30 pb-2 inline-block">Contact us</h3>
             <ul className="flex flex-col gap-4">
-              <li className="text-sm font-light opacity-90">123 Interior Avenue, Colombo, Sri Lanka</li>
-              <li className="text-sm font-light opacity-90">+94 11 234 5678</li>
-              <li className="text-sm font-light opacity-90">hello@platinuminteriors.lk</li>
+              <li className="text-sm font-light opacity-90">
+                <a 
+                  href="https://maps.google.com/?q=Platinum+Interiors,+welagane+watta,+Maspotha,+Kurunegala" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-secondary transition-colors"
+                >
+                  Platinum Interiors, welagane watta, Maspotha , Kurunegala
+                </a>
+              </li>
+              <li className="text-sm font-light opacity-90">
+                <a 
+                  href="tel:+94727261058" 
+                  className="hover:text-secondary transition-colors"
+                >
+                  +94 727261058
+                </a>
+              </li>
+              <li className="text-sm font-light opacity-90">
+                <a 
+                  href="mailto:hello@theplatinuminteriors.com" 
+                  className="hover:text-secondary transition-colors"
+                >
+                  hello@theplatinuminteriors.com
+                </a>
+              </li>
             </ul>
           </div>
 

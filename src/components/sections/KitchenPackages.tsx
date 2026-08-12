@@ -75,7 +75,7 @@ export function KitchenPackages() {
                   <div className="flex items-start gap-3">
                     <Sparkles size={18} className="text-secondary mt-0.5 flex-shrink-0" />
                     <div>
-                      <div className="font-semibold text-primary text-[14px]">Bi-Annual Deep Cleaning Service</div>
+                      <div className="font-semibold text-primary text-[14px]">Professional Deep Clean every 6 months</div>
                       <p className="text-[13px] text-gray-600 mt-0.5">
                         Enjoy a complimentary professional deep cleaning service once every 6 months to keep your kitchen looking immaculate.
                       </p>
