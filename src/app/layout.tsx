@@ -12,7 +12,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Platinum Interiors | Premium Sri Lanka Interiors",
+  title: "Platinum Interiors | Kitchens · Aluminium · Interiors · Sri Lanka",
   description: "Platinum Interiors designs, builds and installs premium windows, doors, glass panels and kitchens.",
 };
 
